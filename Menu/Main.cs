@@ -6988,42 +6988,42 @@ jgs \_   _/ |Oo\
         public static int themeType = 1;
         public static bool slowFadeColors;
 
-        public static ExtGradient backgroundColor = new ExtGradient
-        {
-            colors = ExtGradient.GetSimpleGradient(
-                new Color32(255, 128, 0, 128),
-                new Color32(255, 102, 0, 128)
-            )
-        };
+        // Fundo azul
+public static ExtGradient backgroundColor = new ExtGradient
+{
+    colors = ExtGradient.GetSimpleGradient(
+        new Color32(0, 128, 255, 128),   // Azul claro
+        new Color32(0, 102, 204, 128)    // Azul escuro
+    )
+};
 
-        public static ExtGradient[] buttonColors = {
-            new ExtGradient // Released
-            {
-                colors = ExtGradient.GetSolidGradient(new Color32(170, 85, 0, 255))
-            },
+// Botões azuis
+public static ExtGradient[] buttonColors = {
+    new ExtGradient 
+    {
+        colors = ExtGradient.GetSolidGradient(new Color32(0, 85, 170, 255))
+    },
+    new ExtGradient 
+    {
+        colors = ExtGradient.GetSolidGradient(new Color32(0, 42, 85, 255))
+    }
+};
 
-            new ExtGradient // Pressed
-            {
-                colors = ExtGradient.GetSolidGradient(new Color32(85, 42, 0, 255))
-            }
-        };
-
-        public static ExtGradient[] textColors = {
-            new ExtGradient // Title
-            {
-                colors = ExtGradient.GetSolidGradient(new Color32(255, 190, 125, 255))
-            },
-
-            new ExtGradient // Button Released
-            {
-                colors = ExtGradient.GetSolidGradient(new Color32(255, 190, 125, 255))
-            },
-            new ExtGradient // Button Clicked
-            {
-                colors = ExtGradient.GetSolidGradient(new Color32(255, 190, 125, 255))
-            }
-        };
-
+// Texto azul claro
+public static ExtGradient[] textColors = {
+    new ExtGradient 
+    {
+        colors = ExtGradient.GetSolidGradient(new Color32(125, 190, 255, 255))
+    },
+    new ExtGradient 
+    {
+        colors = ExtGradient.GetSolidGradient(new Color32(125, 190, 255, 255))
+    },
+    new ExtGradient 
+    {
+        colors = ExtGradient.GetSolidGradient(new Color32(125, 190, 255, 255))
+    }
+};
         public static Vector3 closePosition;
 
         public static Vector3 pointerOffset = new Vector3(0f, -0.1f, 0f);
